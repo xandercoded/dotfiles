@@ -1,0 +1,31 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = false
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[{*.py, *.js}]
+indent_size = 4
+
+[*.{sh,py,yml,json,travis.yml,travis.yaml}]
+indent_size = 2
+
+[{package.json}]
+indent_size = 2
+
+[{Makefile,go.mod,go.sum,*.go,.gitmodules}]
+indent_size = 4
+
+[*.tf]
+indent_size = 2
+
+[*.md]
+indent_size = 4
+trim_trailing_whitespace = false
+
+[Dockerfile]
+indent_size = 4

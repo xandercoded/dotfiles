@@ -1,0 +1,33 @@
+[user]
+	name = {{GIT_NAME}}
+	email = {{GIT_EMAIL}}
+[core]
+	editor = vim
+	excludesfile = /Users/xandercoded/.gitignore
+[diff]
+    guitool = kdiff3
+[difftool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+	trustExitCode = false
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+	trustExitCode = false
+[alias]
+	map = log --graph --full-history --all --color --decorate
+	lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches
+	stat = status
+	ch = checkout
+[push]
+	default = simple
+[mergetool]
+	keepBackup = false
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[credential]
+	helper = cache
+[url "git@github.com:"]
+	insteadOf = https://github.com/
