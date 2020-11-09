@@ -99,6 +99,10 @@ noremap <Up> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+" handle slurring fingers
+nnoremap :W :w<cr>
+command! Q :q
+
 nnoremap <silent> <A-K> :res +5<CR>
 nnoremap <silent> <A-J> :res -5<CR>
 nnoremap <silent> <A-L> :vertical res +5<CR>
