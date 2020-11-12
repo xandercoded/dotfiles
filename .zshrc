@@ -50,6 +50,9 @@ alias tpl="tp load"
 # CTAGS alias to brew'd version
 alias ctags="/usr/local/bin/ctags"
 
+# helper aliases
+alias fkill=fzf_process_kill
+
 [ -n "$PS1" ] && source ~/.bash_profile
 
 # Source personal helpers

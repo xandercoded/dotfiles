@@ -12,3 +12,7 @@ http_check_secure_upgrade() {
     return 1
   fi
 }
+
+fzf_process_kill() {
+  kill -9 $(ps aux | fzf | awk '{print $2}')
+}
