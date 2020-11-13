@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 source ~/extras/helpers.sh
+source ~/forgit.plugin.sh
 
 http_check_secure_upgrade() {
   r=$(curl --head -sLI "$1" | grep 'HTTP/\d\.\d|Location')

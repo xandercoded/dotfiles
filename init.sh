@@ -9,7 +9,7 @@ set_symlinks() {
     '.ctags' '.alacritty.yml' '.tern-config' \
     '.helpers.sh' '.inputrc' '.gitignor' \
     '.tmux-powerlinerc' '.editorconfig' \
-    'extras' '.tmux'; do
+    'extras' '.tmux' 'forgit.plugin.sh'; do
     t=$p
 
     case $t in
@@ -51,6 +51,9 @@ init() {
 
   echo "Installing tmux tpm ..."
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+  echo "Fetching forgit.plugin.zsh ..."
+  curl -so forgit.plugin.sh https://raw.githubusercontent.com/wfxr/forgit/master/forgit.plugin.zsh
 
   echo "Finito ."
   cd - || return
