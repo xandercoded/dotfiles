@@ -1,0 +1,11 @@
+.gitconfig
+
+.vim/plugged/*
+.vim/autoload/*
+.vim/pack/*
+
+.tmux/plugins/*
+resurrect
+forgit.plugin.sh
+
+!/**/.gitkeep
