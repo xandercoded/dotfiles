@@ -4,16 +4,7 @@
 [core]
 	editor = vim
 	excludesfile = /Users/xandercoded/.gitignore
-[diff]
-    guitool = kdiff3
-[difftool "kdiff3"]
-	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
-	trustExitCode = false
-[merge]
-	tool = kdiff3
-[mergetool "kdiff3"]
-	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
-	trustExitCode = false
+    pager = delta
 [alias]
 	map = log --graph --full-history --all --color --decorate
 	lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches
@@ -31,3 +22,14 @@
 	helper = cache
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    features = unobtrusive-line-numbers decorations
+    whitespace-error-style = 22 reverse
+    plus-color = "#012800"
+    minus-color = "#340001"
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
