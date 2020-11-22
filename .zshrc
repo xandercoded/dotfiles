@@ -75,4 +75,5 @@ export PATH="/usr/local/bin/python3:$PATH"
 export PATH="/usr/local/bin/vim:$PATH"
 # golang
 export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/Users/xandercoded/go/bin"
 export GOPATH="/Users/xandercoded/go/"
