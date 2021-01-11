@@ -43,6 +43,8 @@ alias gla="git log --all --decorate --oneline --graph"
 alias goo="googler"
 alias goon="googler -N"
 
+alias tre="tree -haCL 2"
+
 # tmux
 alias tp="tmuxp"
 alias tpl="tp load"

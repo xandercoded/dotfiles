@@ -87,7 +87,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'preservim/nerdcommenter'
 Plug 'z0mbix/vim-shfmt'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
